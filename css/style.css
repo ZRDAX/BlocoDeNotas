@@ -45,8 +45,7 @@ main{
   position: absolute;
   display:none;
   width: 90vw;
-  padding:10px;
- 
+  padding:10px; 
 }
 
 #close-modal{
