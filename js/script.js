@@ -44,19 +44,10 @@ btnSaveNote.addEventListener('click', (evt) =>{
 
 closeModalView.addEventListener('click', (evt) => {
   evt.preventDefault();
-  listNotes();
   modalView.style.display='none';
   notes.style.display='flex';
   addNote.style.display='block';
 });
-
-
-
-
-
-
-
-
 
 
 //------------------------------ FUNÇÕES ------------------------------

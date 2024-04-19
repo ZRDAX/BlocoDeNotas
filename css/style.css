@@ -1,28 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&display=swap');
 *{
   margin:0;
   padding:0;
 }
 
 header{
-  border-bottom: 1px solid #1b85dc;
+  border-bottom: 1px solid #060;
   height: 10vh;
   display:flex;
 }
 
-#morfismo{
-  width: 500px;
-  height: 500px;
-  background: rgba( 112, 112, 112, 0.15 );
-  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-  backdrop-filter: blur( 3px );
-  -webkit-backdrop-filter: blur( 3px );
-  border-radius: 10px;
-  border: 1px solid rgba( 255, 255, 255, 0.18 );
+body{
+  background-image:radial-gradient(#444, #111);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
 }
+
+body:after {
+  background-image:linear-gradient(transparent, transparent 3px, #222);
+  background-size:4px 4px;
+  bottom:0;
+  content:"";
+  left:0;
+  pointer-events:none;
+  position:absolute;
+  right:0;
+  top:0;
+  z-index:2;
+}
+
+/* ------------------------card-------------------------- */
+
+.card{
+  background: transparent;
+  box-shadow: 0 0 5vmin 1vmin #000 inset;
+  backdrop-filter: blur( 4px );
+  -webkit-backdrop-filter: blur( 4px );
+  border-radius: 8px;
+  border: 0.5px solid rgba(0, 102, 0, 0.164);
+}
+
+.card-body{
+  animation:colorPulse 5s infinite ease-in-out;
+  background-image:radial-gradient(#444, #111);
+  box-shadow:0 0 5vmin 1vmin #000 inset;
+  border-radius: 8px;
+  font-family:'IBM Plex Mono', monospace;
+  overflow:hidden;
+}
+.card-body>h1{
+  font-size: 35px;
+}
+
+body:after {
+  background-image:linear-gradient(transparent, transparent 3px, #222);
+  background-size:4px 4px;
+  bottom:0;
+  content:"";
+  left:0;
+  pointer-events:none;
+  position:absolute;
+  right:0;
+  top:0;
+  z-index:2;
+}
+
+p:last-child:after {
+  animation:blink 1s infinite;
+  content:"_";
+}
+
+@keyframes colorPulse {
+  0%, 100% {
+    color:#0c0;
+  }
+  48%, 52% {
+    color:#090;
+  }
+  50% {
+    color:#060;
+  }
+}
+
+@keyframes blink {
+  50% {
+    opacity:0;
+  }
+}
+/* ------------------------card-------------------------- */
 
 #logo{
   width: 30vw;
   height: 10vh;
+  margin: 1.1vh 0 0 1vw;
 }
 
 #logo img{
