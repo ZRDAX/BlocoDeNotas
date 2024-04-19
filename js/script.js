@@ -44,7 +44,6 @@ btnSaveNote.addEventListener('click', (evt) =>{
 
 closeModalView.addEventListener('click', (evt) => {
   evt.preventDefault();
-  closeModalView.style.color='#36b704';
   modalView.style.display='none';
   notes.style.display='flex';
   addNote.style.display='block';
