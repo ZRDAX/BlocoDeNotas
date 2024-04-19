@@ -134,9 +134,6 @@ main{
 #close-modal{
   float:right;
 }
-#close-modal>a{
-  color: #090;
-}
 
 #modal{
   border:1px solid;
